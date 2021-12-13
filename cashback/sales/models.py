@@ -1,6 +1,8 @@
 from django.db import models
-
+from cashback import settings
 # Create your models here.
+
+
 
 class costumer(models.Model):
     user = models.CharField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name=("Costumer"))
