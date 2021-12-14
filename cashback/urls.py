@@ -16,9 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from cashback.sales.views import cashback
+from cashback.sales.views import CostumerViewSet
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', cashback),
+    path('', CostumerViewSet),
 ]

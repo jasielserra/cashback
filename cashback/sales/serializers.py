@@ -1,9 +1,9 @@
-import models
+from . import models
 from rest_framework import serializers
 
 class CostumerSerializer(serializers.ModelSerializer):
     class Meta:
-        models = models.Customer
+        models = models.Costumer
         fields = ['user', 'document', 'name']
 
 class ProductSerializer(serializers.ModelSerializer):
